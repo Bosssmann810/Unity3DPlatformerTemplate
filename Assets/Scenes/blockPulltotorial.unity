@@ -3620,6 +3620,7 @@ GameObject:
   - component: {fileID: 1725521260}
   - component: {fileID: 1725521259}
   - component: {fileID: 1725521258}
+  - component: {fileID: 1725521262}
   m_Layer: 0
   m_Name: unfinished death zone
   m_TagString: Untagged
@@ -3716,6 +3717,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1725521262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725521256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aef2937b1acaf3409fa89633ad12aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 20
+  despawnAfterDamage: 0
+  vulnerableTags:
+  - Player
+  collidesWithInvulnerable: 1
+  repulsionForce: 0
+  launchForce: 0
+  cooldown: 0
+  DetectionMethod: 3
+  impactSound: {fileID: 0}
 --- !u!1001 &1744527544
 PrefabInstance:
   m_ObjectHideFlags: 0

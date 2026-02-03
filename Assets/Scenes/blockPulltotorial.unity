@@ -4050,6 +4050,7 @@ MonoBehaviour:
         list:
         - rid: 3357980671014862864
         - rid: 3357980671014862865
+        - rid: 3793471329883389952
     - rid: 3357980671014862863
       type: {class: TriggerActionsList, ns: , asm: Assembly-CSharp}
       data:
@@ -4066,9 +4067,16 @@ MonoBehaviour:
     - rid: 3357980671014862865
       type: {class: GameObjectToggleAction, ns: , asm: Assembly-CSharp}
       data:
-        runInParallel: 0
+        runInParallel: 1
         targetObject: {fileID: 1837549377}
         setActive: 0
+    - rid: 3793471329883389952
+      type: {class: DisplayScreenTextAction, ns: , asm: Assembly-CSharp}
+      data:
+        runInParallel: 1
+        textToDisplay: Reach The Exit
+        displayDuration: 5
+        textColor: {r: 0.052176815, g: 1, b: 0.051886797, a: 1}
 --- !u!65 &1837549379
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -2584,7 +2584,7 @@ MonoBehaviour:
         runInParallel: 0
         textToDisplay: if you fall down dont worry, theres a saftey platform off
           to the side you can use to get back up here
-        displayDuration: 3
+        displayDuration: 4
         textColor: {r: 0.10849059, g: 0.23648752, b: 1, a: 1}
 --- !u!114 &739717460
 MonoBehaviour:
@@ -4806,7 +4806,7 @@ MonoBehaviour:
         runInParallel: 0
         textToDisplay: That wall is too high to jump over... Maybe you need use something
           as a step ladder
-        displayDuration: 3
+        displayDuration: 4
         textColor: {r: 0.087931626, g: 0.15642197, b: 0.9811321, a: 1}
     - rid: 3793471348376600647
       type: {class: DisplayScreenTextAction, ns: , asm: Assembly-CSharp}
@@ -5322,9 +5322,9 @@ MonoBehaviour:
       type: {class: DisplayScreenTextAction, ns: , asm: Assembly-CSharp}
       data:
         runInParallel: 0
-        textToDisplay: That wall is away to big to jump over, even with the block
+        textToDisplay: That wall is way to big to jump over, even with the block
           as a boost
-        displayDuration: 3
+        displayDuration: 5
         textColor: {r: 0.14509803, g: 0.23970766, b: 1, a: 1}
     - rid: 3357980671014862873
       type: {class: DisplayScreenTextAction, ns: , asm: Assembly-CSharp}
@@ -7778,7 +7778,7 @@ MonoBehaviour:
         runInParallel: 0
         textToDisplay: Alright, one last challenge, just get the block in that trigger 
           on the other side and your home free
-        displayDuration: 5
+        displayDuration: 4
         textColor: {r: 0.14509803, g: 0.23970766, b: 1, a: 1}
     - rid: 8289065478219628545
       type: {class: DisplayScreenTextAction, ns: , asm: Assembly-CSharp}
@@ -7786,7 +7786,7 @@ MonoBehaviour:
         runInParallel: 0
         textToDisplay: There is an invisable platform here. use the block to guide
           you across
-        displayDuration: 3
+        displayDuration: 4
         textColor: {r: 0.14509805, g: 0.2392157, b: 1, a: 1}
     - rid: 8289065478219628546
       type: {class: DisplayScreenTextAction, ns: , asm: Assembly-CSharp}

@@ -3189,11 +3189,11 @@ MonoBehaviour:
       data:
         runInParallel: 1
         targetObject: {fileID: 793651313}
-        newMaterial: {fileID: 2100000, guid: f95e81f907b54b94aa8c6d649aef45bc, type: 2}
+        newMaterial: {fileID: 2100000, guid: 9ed9a00ddfa315444a3c5ea8eb6b56ce, type: 2}
     - rid: 8289065478219628551
       type: {class: GameObjectToggleAction, ns: , asm: Assembly-CSharp}
       data:
-        runInParallel: 0
+        runInParallel: 1
         targetObject: {fileID: 1748717500}
         setActive: 1
     - rid: 8289065478219628552
@@ -5445,9 +5445,9 @@ MonoBehaviour:
       type: {class: DisplayScreenTextAction, ns: , asm: Assembly-CSharp}
       data:
         runInParallel: 0
-        textToDisplay: Looks like this puzzle is simmalar to the second puzzle but
-          youll need all three boxes to open that door
-        displayDuration: 4
+        textToDisplay: Looks like this puzzle is simmalar to the second puzzle, but
+          youl'l need all three boxes to open that door
+        displayDuration: 5
         textColor: {r: 0.14509803, g: 0.23970766, b: 1, a: 1}
     - rid: 3357980671014862873
       type: {class: DisplayScreenTextAction, ns: , asm: Assembly-CSharp}
@@ -5460,7 +5460,7 @@ MonoBehaviour:
       type: {class: DisplayScreenTextAction, ns: , asm: Assembly-CSharp}
       data:
         runInParallel: 0
-        textToDisplay: You can do this. I belive in you
+        textToDisplay: You can do this. I believe in you
         displayDuration: 3
         textColor: {r: 0.10849059, g: 0.23648752, b: 1, a: 1}
 --- !u!114 &1315307980
@@ -8164,9 +8164,8 @@ MonoBehaviour:
       type: {class: DisplayScreenTextAction, ns: , asm: Assembly-CSharp}
       data:
         runInParallel: 0
-        textToDisplay: There is an invisable platform here. use the block to guide
-          you across
-        displayDuration: 4
+        textToDisplay: There is an invisable platform here. The coins show the path.
+        displayDuration: 3
         textColor: {r: 0.14509805, g: 0.2392157, b: 1, a: 1}
     - rid: 8289065478219628546
       type: {class: DisplayScreenTextAction, ns: , asm: Assembly-CSharp}

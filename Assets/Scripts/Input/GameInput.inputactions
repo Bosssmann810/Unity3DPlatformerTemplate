@@ -19,7 +19,7 @@
                     "name": "Jump",
                     "type": "Button",
                     "id": "99b9c396-6efd-4735-bf54-dadad78c4954",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -28,7 +28,7 @@
                     "name": "Interact",
                     "type": "Button",
                     "id": "a197a3a7-82e5-4702-9d0a-06d51366bcdb",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -37,7 +37,7 @@
                     "name": "CameraOrbit",
                     "type": "Value",
                     "id": "1f93c39c-0541-45cb-8cdd-e043967d370a",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -46,7 +46,7 @@
                     "name": "Pause",
                     "type": "Button",
                     "id": "2611d94a-3fdb-4f5b-802f-ebb454428c54",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -55,7 +55,7 @@
                     "name": "Dash",
                     "type": "Button",
                     "id": "0aae8cad-25bf-4595-ac6d-08a850c438fe",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -64,9 +64,18 @@
                     "name": "Cancel",
                     "type": "Button",
                     "id": "b04a64b6-cd30-46da-b254-0a2dffab8f97",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rewind",
+                    "type": "Button",
+                    "id": "d36e7361-7b3f-44f7-baf9-5b4209f3d058",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Hold",
                     "initialStateCheck": false
                 }
             ],
@@ -541,6 +550,17 @@
                     "processors": "",
                     "groups": "KeyboardSecondary",
                     "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "925dbab4-f07d-4789-8799-11d27c49faa7",
+                    "path": "<Keyboard>/equals",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rewind",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

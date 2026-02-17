@@ -353,6 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c2966a78a86f844c8765b3623bb548f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 100002}
   rewindable: []
 --- !u!1 &100018
 GameObject:

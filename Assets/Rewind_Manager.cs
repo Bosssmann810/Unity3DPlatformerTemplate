@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class Rewind_Manager : MonoBehaviour
 {
+    public GameObject player;
     public List<GameObject> rewindable = new List<GameObject>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
@@ -53,4 +54,5 @@ public class Rewind_Manager : MonoBehaviour
 
         }
     }
+
 }

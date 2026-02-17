@@ -27,7 +27,7 @@ public class Rewind_initiator : MonoBehaviour
         //if we are not rewinding
         if(rewinding == false)
         {
-            Debug.Log(currentPos.rotation);
+            //Debug.Log(currentPos.rotation);
             //and if the current position has changed
             if (rewindPositions.Contains(currentPos.position))
             {

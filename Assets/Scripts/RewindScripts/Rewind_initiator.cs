@@ -4,6 +4,7 @@ using UnityEngine.UIElements;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
+using UnityEngine.Assertions.Must;
 
 public class Rewind_initiator : MonoBehaviour
 {
@@ -53,26 +54,21 @@ public class Rewind_initiator : MonoBehaviour
         }
         
     }
-    //this is just here to make my life easier... yes I know it should be in input commands, no i don't care.
-    public void RewindButton()//InputAction.CallbackContext context)
+    public void StartRewind()//InputAction.CallbackContext context)
     {
         //when the button is pressed
-        if(true )//context.performed//)
-        {
             //reverse the list
-            rewindPositions.Reverse();
+        rewindPositions.Reverse();
             //and begin rewinding
-            rewinding = true;
-
+        rewinding = true;
             //also this is where I could add the funky effects.
-        }
+        //this is just here to make my life easier... yes I know it should be in input commands, no i don't care.
         //when the button is released
-        if (false)//(context.cancele)
-        {
-            //clear the rewind positions so it can start fresh.
-            rewindPositions.Clear();
-            //and stop rewinding.
-            rewinding = false;
-        }
+    }
+
+    public void EndRewind()
+    {
+        rewindPositions.Clear();
+        rewinding = false;
     }
 }

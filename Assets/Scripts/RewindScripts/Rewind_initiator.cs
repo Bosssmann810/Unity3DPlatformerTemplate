@@ -31,7 +31,7 @@ public class Rewind_initiator : MonoBehaviour
             if (rewindPositions.Contains(currentPos.position))
             {
                 //if it hasn't changed do nothing
-                return;
+                //return;
             }
             //add the current position to the rewind positions
             rewindPositions.Add(currentPos.position);
@@ -68,7 +68,7 @@ public class Rewind_initiator : MonoBehaviour
 
     public void EndRewind()
     {
-        rewindPositions.Clear();
+        rewindPositions.Reverse();
         rewinding = false;
     }
 }

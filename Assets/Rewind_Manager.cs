@@ -29,13 +29,27 @@ public class Rewind_Manager : MonoBehaviour
     {
         
     }
-    public void OnRewind()
-    { 
-        Debug.Log("Rewinding");
-        foreach(GameObject thing in rewindable)
+    public void OnRewind(InputValue value)
+    {
+        if (value.isPressed)
         {
-            Rewind_initiator rewinder = thing.GetComponent<Rewind_initiator>();
-            rewinder.StartRewind();
+            Debug.Log("Rewinding");
+            foreach (GameObject thing in rewindable)
+            {
+                Rewind_initiator rewinder = thing.GetComponent<Rewind_initiator>();
+                rewinder.StartRewind();
+
+            }
+        }
+        if (value.isPressed == false)
+        {
+            Debug.Log("stopping");
+            foreach (GameObject thing in rewindable)
+            {
+                Rewind_initiator rewinder = thing.GetComponent<Rewind_initiator>();
+                rewinder.EndRewind();
+
+            }
 
         }
     }

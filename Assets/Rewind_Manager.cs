@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class Rewind_Manager : MonoBehaviour
 {
     public GameObject player;
+    public ParticleSystem timeEfffect;
     public List<GameObject> rewindable = new List<GameObject>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
@@ -34,9 +35,11 @@ public class Rewind_Manager : MonoBehaviour
     {
         if (value.isPressed)
         {
+            //timeEfffect.Play();
             Debug.Log("Rewinding");
             foreach (GameObject thing in rewindable)
             {
+                
                 Rewind_initiator rewinder = thing.GetComponent<Rewind_initiator>();
                 rewinder.StartRewind();
 
@@ -44,6 +47,7 @@ public class Rewind_Manager : MonoBehaviour
         }
         if (value.isPressed == false)
         {
+            //timeEfffect.Stop();
             Debug.Log("stopping");
             foreach (GameObject thing in rewindable)
             {

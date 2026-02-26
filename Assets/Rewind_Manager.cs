@@ -9,6 +9,7 @@ public class Rewind_Manager : MonoBehaviour
     public GameObject player;
     public ParticleSystem timeEfffect;
     public List<GameObject> rewindable = new List<GameObject>();
+    public GameObject rewindEffect;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
@@ -37,6 +38,7 @@ public class Rewind_Manager : MonoBehaviour
         {
             //timeEfffect.Play();
             Debug.Log("Rewinding");
+            rewindEffect.SetActive(true);
             foreach (GameObject thing in rewindable)
             {
                 
@@ -49,6 +51,7 @@ public class Rewind_Manager : MonoBehaviour
         {
             //timeEfffect.Stop();
             Debug.Log("stopping");
+            rewindEffect.SetActive(false);
             foreach (GameObject thing in rewindable)
             {
                 Rewind_initiator rewinder = thing.GetComponent<Rewind_initiator>();

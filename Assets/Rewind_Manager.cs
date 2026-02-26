@@ -36,7 +36,7 @@ public class Rewind_Manager : MonoBehaviour
     {
         if (value.isPressed)
         {
-            //timeEfffect.Play();
+            timeEfffect.Play();
             Debug.Log("Rewinding");
             rewindEffect.SetActive(true);
             foreach (GameObject thing in rewindable)
@@ -49,7 +49,7 @@ public class Rewind_Manager : MonoBehaviour
         }
         if (value.isPressed == false)
         {
-            //timeEfffect.Stop();
+            timeEfffect.Stop();
             Debug.Log("stopping");
             rewindEffect.SetActive(false);
             foreach (GameObject thing in rewindable)

@@ -15,7 +15,9 @@ public class Rewind_Manager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
+        //make sure everything needed to run is acsessed
         GameObject rewindHolder = GameObject.FindGameObjectWithTag("RewindHolder");
+        //find the rewindholder, get every child and add it to the rewindable list
         foreach(Transform Child in rewindHolder.transform)
         {
             rewindable.Add(Child.gameObject);
@@ -36,12 +38,16 @@ public class Rewind_Manager : MonoBehaviour
     }
     public void OnRewind(InputValue value)
     {
+        //when the button is pressed
         if (value.isPressed)
         {
+            //reverse the music
             backgroundMusic.pitch = -1f;
+            //play the static sound
             rewindStaticSound.Play();
             //timeEfffect.Play();
             Debug.Log("Rewinding");
+
             rewindEffect.SetActive(true);
             foreach (GameObject thing in rewindable)
             {

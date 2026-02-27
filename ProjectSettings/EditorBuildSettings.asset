@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/blockPulltotorial.unity
     guid: a5b16a4597ab8554ea77edf85eec1e4d
+  - enabled: 1
+    path: Assets/Scenes/TimeRewindTestingLevel.unity
+    guid: a349fea74ce5d1a4b800f018e80358ae
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: b9df20fcec8049446933e6b258f76f79

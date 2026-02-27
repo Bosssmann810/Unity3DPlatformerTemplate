@@ -442,7 +442,7 @@ MonoBehaviour:
       type: {class: DisplayScreenTextAction, ns: , asm: Assembly-CSharp}
       data:
         runInParallel: 0
-        textToDisplay: Just hold down [=] and you will rewind time
+        textToDisplay: Just hold down [=] and you will rewind eveything around you.
         displayDuration: 3
         textColor: {r: 0.00739336, g: 0, b: 1, a: 1}
     - rid: 8289065952854671424

@@ -11,6 +11,7 @@ public class Rewind_Manager : MonoBehaviour
     public List<GameObject> rewindable = new List<GameObject>();
     public GameObject rewindEffect;
     public AudioSource backgroundMusic;
+    public AudioSource rewindStaticSound;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
@@ -38,7 +39,8 @@ public class Rewind_Manager : MonoBehaviour
         if (value.isPressed)
         {
             backgroundMusic.pitch = -1f;
-            timeEfffect.Play();
+            rewindStaticSound.Play();
+            //timeEfffect.Play();
             Debug.Log("Rewinding");
             rewindEffect.SetActive(true);
             foreach (GameObject thing in rewindable)
@@ -51,8 +53,9 @@ public class Rewind_Manager : MonoBehaviour
         }
         if (value.isPressed == false)
         {
+            rewindStaticSound.Stop();
             backgroundMusic.pitch = 1f;
-            timeEfffect.Stop();
+            //timeEfffect.Stop();
             Debug.Log("stopping");
             rewindEffect.SetActive(false);
             foreach (GameObject thing in rewindable)

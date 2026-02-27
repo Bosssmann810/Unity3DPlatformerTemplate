@@ -89,6 +89,7 @@ public class Rewind_initiator : MonoBehaviour
     {
         rewindRotations.Reverse();
         rewindPositions.Reverse();
+        transform.position = currentPos.position;
         rewinding = false;
     }
 }

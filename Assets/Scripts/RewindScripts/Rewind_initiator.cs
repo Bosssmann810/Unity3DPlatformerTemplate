@@ -10,6 +10,7 @@ public class Rewind_initiator : MonoBehaviour
 {
     public List<Vector3> rewindPositions = new List<Vector3>();
     public List<Quaternion> rewindRotations = new List<Quaternion>();
+    public Rigidbody rb;
     public bool rewinding;
     public GameObject body;
     public Transform currentPos;
@@ -17,11 +18,13 @@ public class Rewind_initiator : MonoBehaviour
     void Start()
     {
         rewinding = false;
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         //keep track of the current position
         currentPos = body.transform;
         //if we are not rewinding
@@ -42,6 +45,7 @@ public class Rewind_initiator : MonoBehaviour
         if (rewinding == true)
         {
             //if nothing is there dont do anything;
+           rb.linearVelocity = Vector3.zero;
            if(rewindPositions.ElementAt(0) == null)
            {
                 return;

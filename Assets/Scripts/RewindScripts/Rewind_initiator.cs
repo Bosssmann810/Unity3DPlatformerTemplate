@@ -48,6 +48,7 @@ public class Rewind_initiator : MonoBehaviour
            rb.linearVelocity = Vector3.zero;
            if(rewindPositions.ElementAt(0) == null)
            {
+                EndRewind();
                 return;
            }
             //find out the current position at element 0 of the list
@@ -80,6 +81,7 @@ public class Rewind_initiator : MonoBehaviour
         rewindRotations.Reverse();
             //and begin rewinding
         rewinding = true;
+        rb.isKinematic = true;
             //also this is where I could add the funky effects.
         //this is just here to make my life easier... yes I know it should be in input commands, no i don't care.
         //when the button is released
@@ -91,5 +93,6 @@ public class Rewind_initiator : MonoBehaviour
         rewindPositions.Reverse();
         transform.position = currentPos.position;
         rewinding = false;
+        rb.isKinematic = false;
     }
 }
